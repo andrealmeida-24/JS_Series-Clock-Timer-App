@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!--STYLE-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/19ac240dca.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>⌚️ Digital Clock</title>
+  </head>
+  <body>
+    <nav>
+      <!--NAVBAR-->
+      <a href="https://github.com/andrealmeida-24" target="_blank">
+        <img id="github-logo" src="GitHub-Mark-Light-120px-plus.png" />
+      </a>
+      <a
+        href="https://www.linkedin.com/in/andr%C3%A9-almeida-web-dev/"
+        target="_blank"
+      >
+        <img id="linkedin-logo" src="linkedIn.png" />
+      </a>
+    </nav>
+    <main>
+      <div class="full-screen--container">
+        <div class="time-format--container">
+          <h1 id="hour-format-12">24-hour format</h1>
+          <div class="form-check form-switch">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="flexSwitchCheckDefault"
+            />
+          </div>
+        </div>
+        <!--TABS-->
+
+        <div class="clock-wrapper">
+          <div class="clock-display--container">
+            <div class="first-row--options">
+              <i class="fa-sharp fa-solid fa-clock"></i>
+              <i class="fa-sharp fa-solid fa-stopwatch"></i>
+            </div>
+            <div class="clock">
+              <div class="clock--hours">
+                <h1 id="clock-hour">20</h1>
+              </div>
+              <div id="clock--separator">
+                <h1 id="clock-separator">:</h1>
+              </div>
+              <div class="clock--minutes">
+                <h1 id="clock-minutes">37</h1>
+              </div>
+              <div class="seconds-AM--container">
+                <div class="pacific-format">
+                  <h1 id="time-format">AM</h1>
+                </div>
+                <div class="clock--seconds">
+                  <h1 id="clock-seconds">34</h1>
+                </div>
+              </div>
+            </div>
+            <div class="clock--day">
+              <h1 id="day">Mar, Sunday 6</h1>
+            </div>
+          </div>
+
+          <div class="input-timer-play">
+            <input
+              id="input-timer"
+              type="number"
+              pattern="\d*"
+              placeholder="Insert minutes"
+            />
+            <i class="fa-sharp fa-solid fa-play"></i>
+          </div>
+
+          <div class="timer-error-message">
+            <h1 id="error-message">Please insert some valid minutes...</h1>
+          </div>
+
+          <div class="timer">
+            <div class="timer--hours">
+              <h1 id="timer-hour">00</h1>
+            </div>
+            <div id="timer--separator">
+              <h1 id="timer-separator">:</h1>
+            </div>
+            <div class="timer--minutes">
+              <h1 id="timer-minutes">00</h1>
+            </div>
+            <div id="timer--separator">
+              <h1 id="timer-separator">:</h1>
+            </div>
+            <div class="timer--minutes">
+              <h1 id="timer-seconds">00</h1>
+            </div>
+          </div>
+          <div class="timer--btns">
+            <button id="btn-reset">
+              <i class="fa-sharp fa-solid fa-stop"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

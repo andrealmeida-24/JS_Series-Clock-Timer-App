@@ -1,0 +1,344 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100%;
+  background-color: black;
+  color: white;
+}
+
+/*Nav Area*/
+nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 60px;
+  z-index: 2;
+}
+
+#github-logo {
+  height: 20px;
+  width: 20px;
+  margin-right: 5px;
+}
+
+#linkedin-logo {
+  height: 30px;
+  width: 30px;
+  margin-right: 30px;
+}
+
+/* MAIN SECTION */
+
+/* full-width container */
+
+.full-screen--container {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* time-format */
+.time-format--container {
+  display: flex;
+  visibility: visible;
+  flex-direction: row;
+  margin: 0px auto;
+  justify-content: center;
+}
+
+#hour-format-12 {
+  font-size: 0.6em;
+  color: snow;
+  margin: auto 10px;
+  opacity: 1;
+}
+
+.form-check-input {
+  color: #76b947;
+}
+
+.form-check-input,
+.form-check-input:focus {
+  box-shadow: none;
+  border: none;
+}
+
+.form-check-input:checked {
+  background-color: #76b947;
+  border: none;
+  box-shadow: none;
+}
+
+.clock-display--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto;
+}
+
+.first-row--options {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.fa-clock {
+  padding: 5px;
+  padding: 5px 20px;
+  color: rgb(252, 251, 121);
+  opacity: 1;
+  cursor: pointer;
+}
+
+.fa-stopwatch {
+  padding: 5px;
+  padding: 5px 20px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.clock-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.clock {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 80px auto 80px;
+  padding: auto;
+}
+
+.clock--hours {
+  padding: auto;
+  margin-right: 5px;
+}
+
+#clock-hour {
+  font-size: 3em;
+  font-weight: 600;
+  background-color: #f3ec78;
+  background-image: radial-gradient(
+    circle at 10% 20%,
+    rgb(255, 200, 124) 0%,
+    rgb(252, 251, 121) 90%
+  );
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+#clock-separator {
+  font-size: 2em;
+  color: rgb(255, 200, 124);
+  padding: auto;
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+.clock--minutes {
+  margin-right: 5px;
+  background-color: #f3ec78;
+  background-image: radial-gradient(
+    circle at 10% 20%,
+    rgb(255, 200, 124) 0%,
+    rgb(252, 251, 121) 90%
+  );
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+#clock-minutes {
+  font-size: 3em;
+  color: green;
+  font-weight: 600;
+  padding: auto;
+  margin-right: 5px;
+}
+
+.seconds-AM--container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: auto;
+  justify-content: center;
+  margin-right: 5px;
+}
+
+#time-format {
+  font-size: 0.8em;
+  font-weight: 400;
+  color: rgb(252, 251, 121);
+}
+
+#clock-seconds {
+  font-size: 1em;
+  font-weight: 500;
+  color: #ffbf00;
+}
+
+#day {
+  display: flex;
+  margin: auto;
+  margin-bottom: 10px;
+  font-size: 1em;
+  letter-spacing: 1px;
+  background-color: #f3ec78;
+  background-image: radial-gradient(
+    circle at 10% 20%,
+    rgb(255, 200, 124) 0%,
+    rgb(252, 251, 121) 90%
+  );
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.input-timer-play {
+  display: none;
+  flex-direction: row;
+  margin: 10px auto 10px auto;
+  justify-content: center;
+  align-items: center;
+}
+
+#input-timer {
+  margin: auto;
+  border: 2px solid gray;
+  background-color: black;
+  border-radius: 5px;
+  font-size: 0.8em;
+  padding: 2px;
+  color: #f3ec78;
+  text-align: center;
+  margin: auto;
+}
+
+#input-timer::placeholder {
+  font-size: 0.8em;
+  text-align: center;
+  color: gray;
+  letter-spacing: 2px;
+}
+
+#input-timer:focus {
+  outline-width: 0;
+  border: 2px solid #f3ec78;
+}
+
+.fa-play {
+  margin-left: 20px;
+}
+
+.timer-error-message {
+  display: none;
+  margin-top: 10px;
+}
+
+#error-message {
+  font-size: 0.8em;
+  text-align: center;
+}
+
+.timer {
+  display: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: auto;
+}
+
+.timer--hours {
+  margin-right: 5px;
+}
+
+#timer-hour {
+  font-size: 3em;
+  font-weight: 600;
+  background-color: #f3ec78;
+  background-image: radial-gradient(
+    circle at 10% 20%,
+    rgb(255, 200, 124) 0%,
+    rgb(252, 251, 121) 90%
+  );
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+#timer-separator {
+  font-size: 2em;
+  margin-right: 5px;
+  color: rgb(255, 200, 124);
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+.timer--minutes {
+  margin-right: 5px;
+  background-color: #f3ec78;
+  background-image: radial-gradient(
+    circle at 10% 20%,
+    rgb(255, 200, 124) 0%,
+    rgb(252, 251, 121) 90%
+  );
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+#timer-minutes {
+  font-size: 3em;
+  font-weight: 600;
+}
+
+.timer--btns {
+  display: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+}
+
+#btn-reset {
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  font-size: 0.8em;
+  border-radius: 50%;
+  background-color: black;
+  color: snow;
+  border: 2px solid snow;
+}
+
+#btn-reset:active {
+  border: 2px solid #f3ec78;
+  color: #f3ec78;
+}
