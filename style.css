@@ -131,22 +131,12 @@ nav {
 #clock-hour {
   font-size: 3em;
   font-weight: 600;
-  background-color: #f3ec78;
-  background-image: radial-gradient(
-    circle at 10% 20%,
-    rgb(255, 200, 124) 0%,
-    rgb(252, 251, 121) 90%
-  );
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  color: #f3ec78;
 }
 
 #clock-separator {
   font-size: 2em;
-  color: rgb(255, 200, 124);
+  color: #ffbf00;
   padding: auto;
   font-weight: 600;
   margin-right: 5px;
@@ -154,22 +144,11 @@ nav {
 
 .clock--minutes {
   margin-right: 5px;
-  background-color: #f3ec78;
-  background-image: radial-gradient(
-    circle at 10% 20%,
-    rgb(255, 200, 124) 0%,
-    rgb(252, 251, 121) 90%
-  );
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  color: #f3ec78;
 }
 
 #clock-minutes {
   font-size: 3em;
-  color: green;
   font-weight: 600;
   padding: auto;
   margin-right: 5px;
@@ -202,17 +181,7 @@ nav {
   margin-bottom: 10px;
   font-size: 1em;
   letter-spacing: 1px;
-  background-color: #f3ec78;
-  background-image: radial-gradient(
-    circle at 10% 20%,
-    rgb(255, 200, 124) 0%,
-    rgb(252, 251, 121) 90%
-  );
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  color: #f3ec78;
 }
 
 .input-timer-play {
@@ -278,45 +247,29 @@ nav {
 #timer-hour {
   font-size: 3em;
   font-weight: 600;
-  background-color: #f3ec78;
-  background-image: radial-gradient(
-    circle at 10% 20%,
-    rgb(255, 200, 124) 0%,
-    rgb(252, 251, 121) 90%
-  );
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  color: #f3ec78;
 }
 
 #timer-separator {
   font-size: 2em;
   margin-right: 5px;
-  color: rgb(255, 200, 124);
+  color: #ffbf00;
   font-weight: 600;
   margin-right: 5px;
 }
 
 .timer--minutes {
   margin-right: 5px;
-  background-color: #f3ec78;
-  background-image: radial-gradient(
-    circle at 10% 20%,
-    rgb(255, 200, 124) 0%,
-    rgb(252, 251, 121) 90%
-  );
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  color: #f3ec78;
 }
 
 #timer-minutes {
   font-size: 3em;
   font-weight: 600;
+}
+
+#timer-seconds {
+  color: #f3ec78;
 }
 
 .timer--btns {

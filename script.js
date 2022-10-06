@@ -56,7 +56,7 @@ const timeDisplay = function () {
 
     clockDay.textContent = String(time).slice(0, 10).replace(" ", ", ");
   } else {
-    clockHour.textContent = time.getHours();
+    clockHour.textContent = String(time.getHours()).padStart(2, 0);
     clockMinutes.textContent = String(time.getMinutes()).padStart(2, 0);
     clockSeconds.textContent = String(time.getSeconds()).padStart(2, 0);
 
